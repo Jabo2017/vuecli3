@@ -9,8 +9,15 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.9",
+    "js-file-download": "^0.4.4",
+    "mockjs": "^1.0.1-beta3",
+    "v-charts": "^1.19.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
+    "vue-slicksort": "^1.1.1",
+    "vue-umeditor": "^0.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -26,6 +33,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "vue-slicksort": "^1.1.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
