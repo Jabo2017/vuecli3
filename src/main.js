@@ -5,14 +5,25 @@ import store from "./store";
 import axios from "axios";
 import ElemnentUI from "element-ui";
 import "./element-variables.scss";
-// import config from "../config";
+import config from "../config";
 
 Vue.use(ElemnentUI);
+
+let bindToGlobal = (obj, key = "var") => {
+  if (typeof window[key] === "undefined") {
+    window[key] = {};
+  }
+
+  for (let i in obj) {
+    window[key][i] = obj[i];
+  }
+};
 
 new Vue({
   router,
   store,
   created() {
+    bindToGlobal(config, "config");
     let that = this;
     let loading;
     // 添加请求拦截器
