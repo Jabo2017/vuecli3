@@ -93,8 +93,11 @@
 </script>
 
 <style lang="scss" scoped="scoped">
+    .index{
+      height: 100%;
+    }
 	.index-header {
-		height: 50px;
+	  height: 50px;
 	}
 	
 	.index-logo {
@@ -125,7 +128,6 @@
 		overflow: hidden;
 		border-bottom: 1px solid #4dbd73;
 		box-sizing: border-box;
-		
 		.index-fold {
 			float: left;
 			margin-top: 11px;
@@ -134,5 +136,52 @@
 			font-size: 20px;
 			color: #888888;
 		}
+		.barMenu {
+			float: left;
+			height: 100%;
+			line-height: 100%;
+			margin-left: 20px;
+			overflow: hidden;
+		}
+		.el-menu-item {
+			height: 100%;
+			line-height: 50px;
+		}
+	}
+	
+	.index-oper {
+		float: right;
+		height: 100%;
+		.el-dropdown {
+			margin: 5px 20px 5px 5px;
+		}
+		.icon-btn {
+			height: 50px;
+			line-height: 50px;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	
+	.index-user {
+		width: 40px;
+		height: 40px;
+		.icon-btn {
+			display: inline-block;
+			height: 100%;
+			line-height: 50px;
+			vertical-align: top;
+		}
+	}
+	
+	.index-aside{
+	   width: 180px;
+	   height: calc(100% - 50px);
+	   background-color: #333;
+	   overflow: hidden;
+	   
+	   .main-menu{
+	     border-right: none;
+	   }
 	}
 </style>
